@@ -49,3 +49,8 @@
     background-color: #e2e2e2;
     border: none;
 }
+
+.explore-menu-list-item .active{
+    border: 4px solid tomato;
+    padding: 2px;
+}
