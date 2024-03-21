@@ -47,11 +47,11 @@
   color: var(--primary);
 }
 
-.navbar-search-icon {
+.navbar-basket-icon {
   position: relative;
 }
 
-.navbar-search-icon .dot {
+.navbar-basket-icon .dot {
   position: absolute;
   min-width: 20px;
   min-height: 20px;
@@ -64,10 +64,14 @@
   justify-content: center
 }
 
-.navbar-search-icon .dot p {
+.navbar-basket-icon .dot p {
   color: #fff;
   font-size: 12px;
   line-height: 12px;
+}
+
+.navbar-basket-icon .dotHidden{
+  display: none;
 }
 
 @media (max-width: 1050px) {
