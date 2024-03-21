@@ -13,7 +13,7 @@
   display: flex;
   list-style: none;
   gap: 20px;
-  color: #49557e;
+  color: var(--dark);
 }
 
 .navbar-right {
@@ -25,8 +25,8 @@
 .navbar button {
   background: transparent;
   font-size: 16px;
-  color: #49557e;
-  border: 1px solid tomato;
+  color: var(--dark);
+  border: 1px solid var(--primary);
   border-radius: 50px;
   padding: 10px 30px;
   cursor: pointer;
@@ -43,8 +43,8 @@
 
 .navbar .active {
   padding-bottom: 2px;
-  border-bottom: 2px solid tomato;
-  color: tomato;
+  border-bottom: 2px solid var(--primary);
+  color: var(--primary);
 }
 
 .navbar-search-icon {
@@ -53,12 +53,21 @@
 
 .navbar-search-icon .dot {
   position: absolute;
-  min-width: 10px;
-  min-height: 10px;
-  background-color: tomato;
-  border-radius: 5px;
+  min-width: 20px;
+  min-height: 20px;
+  background-color: var(--primary);
+  border-radius: 50%;
   top: -8px;
   right: -8px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.navbar-search-icon .dot p {
+  color: #fff;
+  font-size: 12px;
+  line-height: 12px;
 }
 
 @media (max-width: 1050px) {

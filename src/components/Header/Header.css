@@ -33,7 +33,7 @@ header {
 .header-contents button {
   border: none;
   border-radius: 50px;
-  color: #747474;
+  color: var(--gray);
   font-weight: 500;
   font-size: max(1vw, 13px);
   padding: 1vw 2.3vw;

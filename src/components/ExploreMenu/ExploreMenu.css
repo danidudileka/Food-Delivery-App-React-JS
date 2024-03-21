@@ -5,13 +5,13 @@
 }
 
 .explore-menu h1 {
-  color: #262626;
+  color: var(--dark);
   font-weight: 500;
 }
 
 .explore-menu-text {
   max-width: 60%;
-  color: #808080;
+  color: var(--gray);
   text-align: justify;
 }
 
@@ -39,8 +39,8 @@
 
 .explore-menu-list-item p {
   margin-top: 10px;
-  color: #747474;
-  font-size: max(1.4vw, 16px);
+  color: var(--gray);
+  font-size: max(1.2vw, 16px);
   cursor: pointer;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .explore-menu-list-item .active {
-  border: 4px solid tomato;
+  border: 4px solid var(--primary);
   padding: 2px;
 }
 
