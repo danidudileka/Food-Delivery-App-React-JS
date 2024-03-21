@@ -16,47 +16,100 @@
   color: #49557e;
 }
 
-.navbar-right{
-    display: flex;
-    align-items: center;
-    gap: 40px;
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
-.navbar button{
-    background: transparent;
+.navbar button {
+  background: transparent;
+  font-size: 16px;
+  color: #49557e;
+  border: 1px solid tomato;
+  border-radius: 50px;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar button:hover {
+  background-color: #fff4f2;
+}
+
+.navbar li {
+  cursor: pointer;
+}
+
+.navbar .active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid tomato;
+  color: tomato;
+}
+
+.navbar-search-icon {
+  position: relative;
+}
+
+.navbar-search-icon .dot {
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+  background-color: tomato;
+  border-radius: 5px;
+  top: -8px;
+  right: -8px;
+}
+
+@media (max-width: 1050px) {
+  .navbar .logo {
+    width: 140px;
+  }
+
+  .navbar-menu {
+    gap: 20px;
+    font-size: 18px;
+  }
+
+  .navbar-right {
+    gap: 30px;
+  }
+
+  .navbar-right img {
+    width: 22px;
+  }
+
+  .navbar-right button {
+    padding: 8px 25px;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar .logo {
+    width: 120px;
+  }
+
+  .navbar-menu {
+    gap: 15px;
     font-size: 16px;
-    color: #49557e;
-    border: 1px solid tomato;
-    border-radius: 50px;
-    padding: 10px 30px;
-    cursor: pointer;
-    transition: 0.3s;
+  }
+
+  .navbar-right {
+    gap: 20px;
+  }
+
+  .navbar-right img {
+    width: 20px;
+  }
+
+  .navbar-right button {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
 }
 
-.navbar button:hover{
-    background-color: #fff4f2;
-}
-
-.navbar li{
-    cursor: pointer;
-}
-
-.navbar .active{
-    padding-bottom: 2px;
-    border-bottom: 2px solid tomato;
-    color: tomato;
-}
-
-.navbar-search-icon{
-    position: relative;
-}
-
-.navbar-search-icon .dot{
-    position: absolute;
-    min-width: 10px;
-    min-height: 10px;
-    background-color: tomato;
-    border-radius: 5px;
-    top: -8px;
-    right: -8px;
+@media (max-width: 750px) {
+  .navbar-menu {
+    display: none;
+  }
 }
