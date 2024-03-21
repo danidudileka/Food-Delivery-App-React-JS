@@ -1,4 +1,4 @@
-.header {
+header {
   height: 34vw;
   margin: 30px auto;
   background: url("/header_img.png") no-repeat;
@@ -25,6 +25,7 @@
 }
 
 .header-contents p {
+  text-align: justify;
   color: #fff;
   font-size: 1vw;
 }
@@ -37,4 +38,34 @@
   font-size: max(1vw, 13px);
   padding: 1vw 2.3vw;
   background-color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 1050px) {
+  .header-contents {
+    max-width: 45%;
+  }
+}
+@media (max-width: 750px) {
+  .header-contents {
+    max-width: 65%;
+  }
+  .header-contents p {
+    display: none;
+  }
+  .header-contents button {
+    padding: 2vw 4vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-contents {
+    max-width: 85%;
+  }
+  .header-contents p {
+    display: none;
+  }
+  .header-contents button {
+    padding: 2vw 3.5vw;
+  }
 }
