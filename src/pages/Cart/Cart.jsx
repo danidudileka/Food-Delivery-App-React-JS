@@ -1,6 +1,10 @@
 import React, { useContext } from "react";
 import "./Cart.css";
 import { StoreContext } from "../../context/StoreContext";
+import { useNavigate } from "react-router-dom";
+import { assets } from "../../assets/assets";
+
+export const deliveryFee = 2;
 
 const Cart = () => {
   const {
@@ -11,12 +15,12 @@ const Cart = () => {
     getTotalQuantity,
   } = useContext(StoreContext);
   const totalQuantity = getTotalQuantity();
-  const deliveryFee = 2;
+  const navigate = useNavigate();
 
   return (
     <div className="cart">
       <div className="cart-items">
-        <div className="cart-items-title">
+        <div className="cart-items-title cart-heading">
           <p>Items</p>
           <p>Title</p>
           <p>Price</p>
@@ -46,7 +50,7 @@ const Cart = () => {
                       className="Remove"
                       onClick={() => removeFromCart(item._id)}
                     >
-                      X
+                      <img src={assets.remove_icon_cross} alt="remove_icon_cross" />
                     </p>
                   </div>
                   <hr key={`hr-${item._id}-${index}`} />
@@ -67,15 +71,18 @@ const Cart = () => {
             <hr />
             <div className="cart-total-details">
               <p>Delivery Free</p>
-              <p>${deliveryFee}</p>
+              <p>${getTotalCartAmount() === 0 ? 0 : deliveryFee}</p>
             </div>
             <hr />
             <div className="cart-total-details">
               <b>Total</b>
-              <b>${getTotalCartAmount() + deliveryFee}</b>
+              <b>${getTotalCartAmount() === 0 ? 0 : getTotalCartAmount() + deliveryFee}</b>
             </div>
           </div>
-          <button disabled={getTotalCartAmount() === 0}>
+          <button
+            disabled={getTotalCartAmount() === 0}
+            onClick={() => navigate("/order")}
+          >
             PROCEED TO CHECKOUT
           </button>
         </div>
