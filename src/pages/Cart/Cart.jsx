@@ -50,7 +50,10 @@ const Cart = () => {
                       className="Remove"
                       onClick={() => removeFromCart(item._id)}
                     >
-                      <img src={assets.remove_icon_cross} alt="remove_icon_cross" />
+                      <img
+                        src={assets.remove_icon_cross}
+                        alt="remove_icon_cross"
+                      />
                     </p>
                   </div>
                   <hr key={`hr-${item._id}-${index}`} />
@@ -76,7 +79,12 @@ const Cart = () => {
             <hr />
             <div className="cart-total-details">
               <b>Total</b>
-              <b>${getTotalCartAmount() === 0 ? 0 : getTotalCartAmount() + deliveryFee}</b>
+              <b>
+                $
+                {getTotalCartAmount() === 0
+                  ? 0
+                  : getTotalCartAmount() + deliveryFee}
+              </b>
             </div>
           </div>
           <button

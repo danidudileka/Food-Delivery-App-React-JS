@@ -108,6 +108,7 @@
   border: none;
   color: #fff;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 @media (max-width: 750px) {

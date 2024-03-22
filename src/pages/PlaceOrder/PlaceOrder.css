@@ -3,7 +3,18 @@
   align-items: start;
   justify-content: space-between;
   gap: 100px;
-  margin-top: 100px;
+  margin-top: 50px;
+}
+
+.GoBack {
+  width: max(10vw, 100px);
+  padding: 12px 5px;
+  background-color: var(--dark);
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 .place-order-left {
@@ -44,11 +55,10 @@
 }
 
 @media (max-width: 900px) {
-    .place-order {
-      gap: 50px;
-      margin-top: 50px;
-    }
+  .place-order {
+    gap: 50px;
   }
+}
 
 @media (max-width: 750px) {
   .place-order {

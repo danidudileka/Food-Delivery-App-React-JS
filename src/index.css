@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-:root{
+:root {
   --primary: #ff6347;
   --dark: #262626;
-  --gray: #676767
+  --gray: #676767;
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -14,25 +14,25 @@
   scroll-behavior: smooth;
 }
 
-body{
+body {
   min-height: 100vh;
 }
 
-.app{
+.app {
   width: 80%;
   margin: auto;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
 
 @keyframes fadeIn {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }

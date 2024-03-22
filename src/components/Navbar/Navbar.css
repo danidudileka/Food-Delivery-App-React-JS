@@ -61,7 +61,7 @@
   right: -8px;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
 .navbar-basket-icon .dot p {
@@ -70,7 +70,7 @@
   line-height: 12px;
 }
 
-.navbar-basket-icon .dotHidden{
+.navbar-basket-icon .dotHidden {
   display: none;
 }
 
